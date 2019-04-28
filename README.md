@@ -1,2 +1,2 @@
 # Portfolio
-My portfolio website (chrise.dev)
+My portfolio website (https://chrise.dev)
