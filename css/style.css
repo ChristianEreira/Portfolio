@@ -1,0 +1,95 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #EEEEEE;
+  color: #222831;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #222831;
+  color: #EEEEEE;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 82px;
+}
+
+#titleSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #00ADB5;
+  color: #EEEEEE;
+  height: 450px;
+  max-height: calc(100vh - 82px - 102px);
+  font-weight: 700;
+  font-size: 72px;
+  padding-top: 82px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#titleSection span {
+  color: rgba(238, 238, 238, 0.7);
+}
+
+#scrollArrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #00ADB5;
+  color: #EEEEEE;
+  font-size: 48px;
+  height: 102px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 950px) {
+  #titleSection {
+    font-size: 64px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #titleSection {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #titleSection {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #titleSection {
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
