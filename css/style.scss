@@ -26,6 +26,50 @@ html, body {
     z-index: 100;
     width: 100%;
     height: 82px;
+    font-size: 16px;
+
+    #headerContent{
+        @include center;
+        max-width: 1000px;
+        width: calc(100% - 100px);
+        justify-content: space-between;
+
+        #headerTop {
+            font-weight: 700;
+            font-size: 24px;
+        }
+    
+        ul {
+            @include center;
+            flex-direction: row;
+            margin: 0 -9px;
+            padding: 0;
+    
+            li {
+                padding: 0 18px;
+                list-style: none;
+    
+                a {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        #menuButton {
+            display: none;
+            font-size: 24px;
+        }
+    }
+}
+
+.button {
+    text-decoration: none;
+    color: $white;
+    background-color: $lighter;
+    padding: 8px 16px;
+    border-radius: 6px;
+
 }
 
 #titleSection {
@@ -38,12 +82,12 @@ html, body {
     font-size: 72px;
     padding-top:82px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    span{
+    span {
         color: rgba(238, 238, 238, 0.7);
     }
 }
 
-#scrollArrow{
+#scrollArrow {
     @include center;
     align-items: flex-start;
     background: $blue;
@@ -53,26 +97,44 @@ html, body {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 950px) {
     #titleSection {
         font-size: 64px;
     }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
     #titleSection {
         font-size: 48px;
     }
+
+    #headerContent ul {
+        display: none !important;
+    }
+
+    #menuButton {
+        display: block !important;
+    }
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 650px) {
     #titleSection {
         font-size: 36px;
     }
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px) {
     #titleSection {
         font-size: 24px;
+    }
+
+    #headerContent {
+        width: calc(100% - 60px) !important;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #headerContent {
+        width: calc(100% - 30px) !important;
     }
 }
