@@ -7,6 +7,10 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 #header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,12 +21,15 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #222831;
   color: #EEEEEE;
   position: fixed;
   z-index: 100;
   width: 100%;
-  height: 82px;
   font-size: 16px;
 }
 
@@ -41,6 +48,7 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 82px;
 }
 
 #header #headerContent #headerTop {
@@ -79,6 +87,27 @@ html, body {
 #header #headerContent #menuButton {
   display: none;
   font-size: 24px;
+}
+
+#header #mobileMenu {
+  width: 100%;
+  border-top: 4px solid #393E46;
+}
+
+#header #mobileMenu ul {
+  margin: 0;
+  padding: 20px;
+}
+
+#header #mobileMenu ul li {
+  padding: 10px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#header #mobileMenu ul li a {
+  color: #EEEEEE;
+  text-decoration: none;
 }
 
 .button {
