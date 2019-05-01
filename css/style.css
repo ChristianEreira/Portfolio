@@ -82,6 +82,12 @@ html, body {
 #header #headerContent ul li a {
   color: #EEEEEE;
   text-decoration: none;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+
+#header #headerContent ul li a:hover {
+  color: #00ADB5;
 }
 
 #header #headerContent #menuButton {
@@ -116,6 +122,13 @@ html, body {
   background-color: #393E46;
   padding: 8px 16px;
   border-radius: 6px;
+  -webkit-transition: background-color 0.1s !important;
+  transition: background-color 0.1s !important;
+}
+
+.button:hover {
+  color: #EEEEEE !important;
+  background-color: #00ADB5;
 }
 
 #titleSection {
