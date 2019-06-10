@@ -52,9 +52,11 @@ body {
   height: 82px;
 }
 
-#header #headerContent #headerTop {
+#header #headerContent h1 {
   font-weight: 700;
   font-size: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 #header #headerContent ul {
@@ -190,6 +192,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 54px 0;
 }
 
 .textLine {
@@ -197,7 +200,13 @@ body {
   width: 100%;
   max-width: 1000px;
   text-align: center;
-  padding: 54px;
+}
+
+hr {
+  width: 100%;
+  max-width: 1000px;
+  border-top: 1px solid #A1A3BF;
+  margin: 54px 0;
 }
 
 @media only screen and (max-width: 950px) {
