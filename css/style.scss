@@ -9,6 +9,11 @@ $white: #EEEEEE;
     justify-content: center;
 }
 
+@mixin setWidth {
+    width: 100%;
+    max-width: 1000px;
+}
+
 html,
 body {
     margin: 0;
@@ -147,18 +152,23 @@ body {
 }
 
 .textLine {
+    @include setWidth;
     font-size: 24px;
-    width: 100%;
-    max-width: 1000px;
     text-align: center;
-    
 }
 
 hr {
-    width: 100%;
-    max-width: 1000px;
+    @include setWidth;
     border-top: 1px solid #A1A3BF;
     margin: 54px 0;
+}
+
+h2 {
+    @include setWidth;
+    padding: 0;
+    margin: 0;
+    color: #00ADB5;
+    font-size: 36px;
 }
 
 @media only screen and (max-width: 950px) {
