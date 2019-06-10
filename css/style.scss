@@ -10,7 +10,7 @@ $white: #EEEEEE;
 }
 
 @mixin setWidth {
-    width: 100%;
+    width: calc(100% - 30px);
     max-width: 1000px;
 }
 
@@ -166,9 +166,52 @@ hr {
 h2 {
     @include setWidth;
     padding: 0;
-    margin: 0;
+    margin: 0 0 18px 0;
     color: #00ADB5;
     font-size: 36px;
+}
+
+#skills {
+    @include setWidth;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+
+    .section {
+        flex: 1;
+
+        .skill {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            color: #4C4E6E;
+
+            i {
+                width: 40px;
+                padding-right: 20px;
+                text-align: center;
+                font-size: 24px;
+            }
+
+            span {
+                flex: 1;
+            }
+
+            a {
+                text-decoration: none;
+                color: #4C4E6E;
+            }
+
+            &:hover,
+            &:hover a {
+                background: #D8D8D8;
+                color: $dark;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -188,6 +231,10 @@ h2 {
 
     #menuButton {
         display: block !important;
+    }
+    
+    h2 {
+        width: auto;
     }
 }
 

@@ -196,26 +196,90 @@ body {
 }
 
 .textLine {
-  width: 100%;
+  width: calc(100% - 30px);
   max-width: 1000px;
   font-size: 24px;
   text-align: center;
 }
 
 hr {
-  width: 100%;
+  width: calc(100% - 30px);
   max-width: 1000px;
   border-top: 1px solid #A1A3BF;
   margin: 54px 0;
 }
 
 h2 {
-  width: 100%;
+  width: calc(100% - 30px);
   max-width: 1000px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 18px 0;
   color: #00ADB5;
   font-size: 36px;
+}
+
+#skills {
+  width: calc(100% - 30px);
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+#skills .section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#skills .section .skill {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4C4E6E;
+}
+
+#skills .section .skill i {
+  width: 40px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#skills .section .skill span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#skills .section .skill a {
+  text-decoration: none;
+  color: #4C4E6E;
+}
+
+#skills .section .skill:hover,
+#skills .section .skill:hover a {
+  background: #D8D8D8;
+  color: #222831;
 }
 
 @media only screen and (max-width: 950px) {
@@ -233,6 +297,9 @@ h2 {
   }
   #menuButton {
     display: block !important;
+  }
+  h2 {
+    width: auto;
   }
 }
 
