@@ -116,6 +116,32 @@ body {
     }
 }
 
+.multiButton {
+    display: inline-flex;
+    width: auto;
+    border-radius: 6px;
+    border: 1px solid $lighter;
+
+    a {
+        margin: 0;
+        padding: 6px 12px;
+        color: $lighter;
+        text-decoration: none;
+        font-size: 16px;
+        border-left: 1px solid $lighter;
+        transition: all 0.1s;
+
+        &:first-child {
+            border: none;
+        }
+
+        &:hover {
+            background: $lighter;
+            color: $white;
+        }
+    }
+}
+
 #titleSection {
     @include center;
     background: $blue;
@@ -217,6 +243,54 @@ h2 {
     }
 }
 
+#projects {
+    @include setWidth;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+    .project {
+        background: #FFF;
+        border-radius: 8px;
+        border: 1px solid #D8D8D8;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        margin: 0 7.5px;
+
+        &:last-child {
+            margin: 0 0 0 7.5px;
+        }
+
+        &:first-child {
+            margin: 0 7.5px 0 0;
+        }
+
+        img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 100%;
+            border-bottom: 1px solid #d8d8d8;
+        }
+
+        .projBody {
+            margin: 20px;
+
+            h3 {
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                color: $lighter;
+                font-size: 16spx;
+                margin: 12px 0 20px 0;
+            }
+        }
+    }
+}
+
 #footer {
     @include center;
     width: 100%;
@@ -269,6 +343,20 @@ h2 {
 @media only screen and (max-width: 650px) {
     #titleSection {
         font-size: 36px;
+    }
+
+    #projects {
+        flex-direction: column;
+        align-items: center;
+
+        .project {
+            margin: 0 0 15px 0 !important;
+            max-width: 400px;
+
+            &:last-child {
+                margin: 0 !important;
+            }
+        }
     }
 }
 
