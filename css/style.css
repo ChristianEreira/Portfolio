@@ -344,14 +344,6 @@ h2 {
   margin: 0 7.5px;
 }
 
-#projects .project:last-child {
-  margin: 0 0 0 7.5px;
-}
-
-#projects .project:first-child {
-  margin: 0 7.5px 0 0;
-}
-
 #projects .project img {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
