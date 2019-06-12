@@ -270,6 +270,10 @@ h2 {
           flex: 1;
 }
 
+#skills .section a {
+  text-decoration: none;
+}
+
 #skills .section .skill {
   padding: 10px;
   display: -webkit-box;
@@ -287,6 +291,11 @@ h2 {
   color: #4C4E6E;
 }
 
+#skills .section .skill:hover {
+  background: #D8D8D8;
+  color: #222831;
+}
+
 #skills .section .skill i {
   width: 40px;
   text-align: center;
@@ -301,17 +310,6 @@ h2 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-#skills .section .skill a {
-  text-decoration: none;
-  color: #4C4E6E;
-}
-
-#skills .section .skill:hover,
-#skills .section .skill:hover a {
-  background: #D8D8D8;
-  color: #222831;
 }
 
 #projects {
