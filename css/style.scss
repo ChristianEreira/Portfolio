@@ -113,6 +113,19 @@ body {
     &:hover {
         color: $white !important;
         background-color: $blue;
+
+        &.large {
+            color: $white !important;
+            background-color: $dark;
+        }
+    }
+
+    &.large {
+        font-size: 18px;
+        padding: 12px 26px;
+        color: $dark;
+        background-color: $white;
+        border: 1px solid $dark;
     }
 }
 
@@ -248,6 +261,7 @@ h2 {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: space-between;
+    margin-bottom: 32px;
 
     .project {
         background: #FFF;

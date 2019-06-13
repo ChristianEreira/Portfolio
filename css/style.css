@@ -134,6 +134,19 @@ body {
   background-color: #00ADB5;
 }
 
+.button:hover.large {
+  color: #EEEEEE !important;
+  background-color: #222831;
+}
+
+.button.large {
+  font-size: 18px;
+  padding: 12px 26px;
+  color: #222831;
+  background-color: #EEEEEE;
+  border: 1px solid #222831;
+}
+
 .multiButton {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -330,6 +343,7 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 32px;
 }
 
 #projects .project {
